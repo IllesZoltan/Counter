@@ -34,7 +34,7 @@ app.listen(port, () => {
     console.log('The API is lstening to port: ' + port);
 
     db.serialize(() => {
-        db.run("CREATE TABLE IF NOT EXISTS Counter (' CurrentNr INGTEGER)");
+        db.run("CREATE TABLE IF NOT EXISTS Counter (' CurrentNr INTEGER)");
     })
     
     db.close();
